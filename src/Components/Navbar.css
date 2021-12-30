@@ -1,0 +1,155 @@
+.navbar{
+    background: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    
+}
+.menu-icon{
+    display: none;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.menu-icon .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+}
+.menu-icon .fa-bars{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+.navbar-logo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.make-logo{
+    position: relative;
+}
+.logo-name{
+    position: absolute;
+    margin-left: 5px;
+}
+.navbar-logo span{
+    color: rgb(253, 171, 17);
+    font-family: 'Poppins', sans-serif;
+}
+.logo-name{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    word-wrap: normal;
+}
+.logo-icon{
+    color: green;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    
+    align-items: center;
+    padding-right: 30px;
+}
+.link-list{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 5px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.menu-list li:last-child .link-list{
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: rgb(32, 145, 32);
+    transition: all 0.5s ease-in-out;
+    margin-left: 20px;
+    border-radius: 2px;
+    color: #fff;
+    
+}
+.link-list:hover,
+.link-list.active {
+    background-color: #fff;
+    border-radius: 2px;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+@media  screen and (max-width: 768px) {
+    .navbar-logo{
+            font-size: 20px;
+            padding-top: 6px;
+    }
+    .link-list{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .navbar{
+        padding-top: 18px;
+        height: 70px;
+        position: fixed;
+        top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-list{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #000;
+        padding: 20px;
+        right:0;
+        top: 60px;
+        transition: all 0.5s ease-in-out;
+        height: 100vh;
+    }
+   .menu-list li{
+       margin-bottom: 20px;
+       width: 100%;
+       text-align: center;
+   }
+   
+   .menu-list li .link-list, .menu-list li:last-child .link-list {
+       width: 100px;
+       display: block;
+       margin: auto;
+   }
+   .menu-list.close {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+   }
+   .navbar-logo{
+    padding-top: 0px;
+    font-size: 26px;
+}
+.fa-bars{
+    font-size: 26px;
+    margin-top: 5px;
+}
+.fa-times{
+    font-size: 26px;
+    margin-top: 5px;
+}
+#mobile-navbar{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#ul-mobile li:last-child a{
+    padding: 10px;
+    font-size: 18px;
+}
+}

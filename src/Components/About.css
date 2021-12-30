@@ -1,0 +1,103 @@
+.about-container{
+    height: 400px;
+    width: 99%;
+    display: flex;
+    margin: 5px;
+    box-shadow: 1px 1px 10px #000
+}
+.about-main{
+    padding: 30px 30px;
+    width: 60%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.about-main h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(33, 33, 144);
+}
+.about-main p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+p b{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 20px;
+}
+.about-main ul li::before{
+    content: "• ";
+    color: rgb(33, 33, 144);
+}
+.about-image{
+    width: 40%;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.775),rgba(0, 0, 0, 0.652)), url("https://wp.xpeedstudio.com/charitious/wp-content/uploads/2018/04/family.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 span{
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+.gallery{
+    border: 1px solid red;
+}
+.gallery h1{
+    margin: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 1000px) and (min-width: 786px){
+
+    .about-main{
+        width: 70%;
+    }
+    .about-image{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 785px){
+    .about-container{
+        height: 800px;
+        width: 100%;
+        display: block ;
+    }
+    .about-main{
+        width: 100%;
+        height: 50%;
+        
+    }
+    .about-image{
+        width: 100%;
+        height: 50%;
+    }
+}
+@media screen and (max-width: 550px){
+    .about-container{
+        height: 1050px;
+        width: 100%;
+        display: block ;
+    }
+    .about-main{
+        width: 100%;
+        height: 50%;
+        padding: 20px 40px;
+    }
+    .about-image{
+        width: 100%;
+        height: 50%;
+    }
+}
